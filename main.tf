@@ -17,7 +17,7 @@ provider "azurerm" {
 ########Variables######################
 variable "Resource_Group_name" {
     type = string
-    default = "ObabMarioJenkins"
+    default = "ObabJenkins"
     description = "Name of the resource group"
 }
 
@@ -200,7 +200,7 @@ resource "azurerm_linux_virtual_machine" "obab" {
        version = "latest"
    }
 
-   computer_name = "obabmario"
+   computer_name = "obab"
    admin_username = "obabadmin"
    admin_password = "Azertyuiop1234"
    disable_password_authentication = false
